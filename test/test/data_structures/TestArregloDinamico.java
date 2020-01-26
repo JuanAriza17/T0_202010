@@ -47,7 +47,7 @@ public class TestArregloDinamico {
 		String elemento = null;		
 		for (int i = 0; i < arreglo.darTamano(); i++) 
 		{
-			elemento = arreglo.darElemento(i);
+			elemento = (String)arreglo.darElemento(i);
 			assertTrue("El elemento en la posición "+i+" debería ser "+i+" pero es "+elemento+".", elemento.equals(""+i));
 		}
 		
