@@ -59,6 +59,16 @@ public class Modelo {
 	}
 	
 	/**
+	 * Retornar el elemento en la posicion i
+	 * @param i posicion de consulta
+	 * @return elemento de consulta. null si no hay elemento en posicion.
+	 */
+	public String darElemento(int i)
+	{
+		return datos.darElemento(i);
+	}
+	
+	/**
 	 * Requerimiento eliminar dato
 	 * @param dato Dato a eliminar
 	 * @return dato eliminado

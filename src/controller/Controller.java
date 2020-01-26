@@ -33,7 +33,7 @@ public class Controller {
 		while( !fin ){
 			view.printMenu();
 
-			int option = lector.nextInt();
+			int option = lector.nextInt();				
 			switch(option){
 				case 1:
 					view.printMessage("--------- \nCrear Arreglo \nDar capacidad inicial del arreglo: ");
