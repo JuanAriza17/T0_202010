@@ -89,18 +89,16 @@ public class ArregloDinamico implements IArregloDinamico {
 			String elemento = buscar(dato);
 			if(elemento!=null)
 			{
-				String[] copia = elementos;
-				elementos = new String[tamanoMax];
 				boolean eliminado = false;
 				
 				for (int i = 0; i < tamanoAct-1; i++) 
 				{
-					if(elemento.compareTo(copia[i])==0)
+					if(elemento.compareTo(elementos[i])==0)
 						eliminado = true;
 					if(eliminado)
-						elementos[i]=copia[i+1];
+						elementos[i]=elementos[i+1];
 					else
-						elementos[i]=copia[i];
+						elementos[i]=elementos[i];
 				}
 					
 				tamanoAct--;
