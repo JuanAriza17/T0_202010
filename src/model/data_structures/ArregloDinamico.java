@@ -90,18 +90,16 @@ public class ArregloDinamico<T extends Comparable<T>> implements IArregloDinamic
 			T elemento = buscar(dato);
 			if(elemento!=null)
 			{
-				T[] copia = elementos;
-				elementos = (T[])new Comparable[tamanoMax];
 				boolean eliminado = false;
 				
 				for (int i = 0; i < tamanoAct-1; i++) 
 				{
-					if(elemento.compareTo(copia[i])==0)
+					if(elemento.compareTo(elementos[i])==0)
 						eliminado = true;
 					if(eliminado)
-						elementos[i]=copia[i+1];
+						elementos[i]=elementos[i+1];
 					else
-						elementos[i]=copia[i];
+						elementos[i]=elementos[i];
 				}
 					
 				tamanoAct--;
