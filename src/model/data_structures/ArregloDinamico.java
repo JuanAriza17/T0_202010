@@ -98,8 +98,6 @@ public class ArregloDinamico<T extends Comparable<T>> implements IArregloDinamic
 						eliminado = true;
 					if(eliminado)
 						elementos[i]=elementos[i+1];
-					else
-						elementos[i]=elementos[i];
 				}
 					
 				tamanoAct--;
