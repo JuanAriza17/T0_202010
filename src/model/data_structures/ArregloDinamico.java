@@ -97,8 +97,6 @@ public class ArregloDinamico implements IArregloDinamico {
 						eliminado = true;
 					if(eliminado)
 						elementos[i]=elementos[i+1];
-					else
-						elementos[i]=elementos[i];
 				}
 					
 				tamanoAct--;
